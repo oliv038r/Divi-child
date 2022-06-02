@@ -1,0 +1,91 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Version: 4.14.8.165235204
+Updated: 2022-05-12 12:38:48
+
+*/
+
+/* Gør så der ikke kan scrolles til siden ved brug af scrolleffekter */
+#et-main-area {
+    overflow: hidden!important;
+}
+
+/* Tilføjer short description til shop modulet og styles */
+.description {
+    color: black !important;
+    font-size: 30px !important;
+    padding-bottom: 10px;
+    }
+
+
+/* Erstatter overlay ikon med egen tekst (som dog er uploadet som svg) */
+.woocommerce .et_overlay:before {
+    content: url(https://spinchy.hanert.dk/wp-content/uploads/2022/05/Udforsk-knap.svg);
+    }
+
+/* Laver display: flex, når der er mere end 3 kolonner */
+@media only screen and (max-width: 980px) {
+    .five-columns .et_pb_column {
+    max-width: 25%!important;
+    }
+
+/* Laver display: flex, når der er mere end 3 kolonner */
+    .three-columns .et_pb_column {
+        max-width: 33.3% !important;
+        padding: 5px;        
+    }
+
+/* Styler produkt-beskrivelse */
+    .description {
+        font-size: 20px !important;
+    }
+    }
+
+/* Tilføjer hover effekt på tekst, når der er hover over HELE kolonnen */
+    .kat:hover *{
+        color: #F35E36 !important;
+    }
+
+/* Tilføjer lidt padding til højre for menubaren på desktop */
+    nav.et-menu-nav {
+        padding-right: 10px !important;
+    }
+
+    .et_pb_section:first-child .et_pb_button:after {
+        line-height: inherit;
+        font-size: inherit!important;
+        margin-left: 1em;
+        left: auto;
+        display: inline-block;
+        opacity: 1;
+        content: attr(data-icon);
+        font-family: "ETmodules"!important;
+    }
+
+    .et_pb_section .et_pb_button:after {
+        line-height: inherit;
+        font-size: inherit!important;
+        margin-left: 1em;
+        left: auto;
+        display: inline-block;
+        opacity: 1;
+        content: attr(data-icon);
+        font-family: "ETmodules"!important;
+    }
+
+    /* Skifter kurv-ikonet */ 
+.et_pb_menu__cart-button:after {
+    content: '\e079';
+    font-family: 'ETmodules' !important;
+}
+
+
+
+
+
+  
