@@ -5,10 +5,27 @@ Template: Divi
 Author: Elegant Themes
 Author URI: http://www.elegantthemes.com
 Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
-Version: 4.14.8.165235204
+Version: 4.14.8.165235205
 Updated: 2022-05-12 12:38:48
 
 */
+
+/* Remove sidebar */
+#sidebar {
+	display:none;
+}
+
+/* Remove thin line */
+#main-content .container:before {
+	background: none;
+}
+
+/* Make content 100% width */
+@media (min-width: 981px){
+#left-area {
+	width: 100%;
+	padding-right: 0px !important;
+}}
 
 /* Gør så der ikke kan scrolles til siden ved brug af scrolleffekter */
 #et-main-area {
