@@ -23,11 +23,6 @@ Updated: 2022-05-12 12:38:48
     }
 
 
-/* Erstatter overlay ikon med egen tekst (som dog er uploadet som svg) */
-.woocommerce .et_overlay:before {
-    content: url(https://spinchy.hanert.dk/wp-content/uploads/2022/05/Udforsk-knap.svg);
-    }
-
 /* Laver display: flex, når der er mere end 3 kolonner */
 @media only screen and (max-width: 980px) {
     .five-columns .et_pb_column {
